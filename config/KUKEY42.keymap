@@ -62,7 +62,7 @@
             bindings = <
 &mt ESCAPE Q      &kp W         &kp E         &kp R          &kp T                                                &kp Y      &kp U  &kp I      &kp O      &kp P
 &mt LCTRL A       &kp S         &kp D         &kp F          &kp G      &lt 6 INT_HENKAN      &lt 5 INT_MUHENKAN  &kp H      &kp J  &kp K      &kp L      &mt RCTRL ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B      &lt 4 TAB             &lt 3 ESC           &kp N      &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B      &lt 4 TAB             &lt 0 ESC           &kp N      &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
 &kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LG(LS(S))  &kp SPACE  &lt 2 LCTRL           &lt 1 BACKSPACE     &kp ENTER                               &kp ESCAPE
             >;
 
@@ -91,13 +91,11 @@
 
         ARROW {
             bindings = <
-&kp AMPERSAND        &kp AT_SIGN       &kp RIGHT_BRACKET  &kp BACKSLASH  &kp LS(INTERNATIONAL_3)                                 &kp UNDER      &kp LC(KP_PLUS)  &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp PLUS
-&kp MINUS            &kp LEFT_BRACKET  &kp EXCLAMATION    &kp QUESTION   &kp INT_YEN               &trans                &to 4   &kp PAGE_UP    &kp LC(MINUS)    &kp UP_ARROW    &kp CARET             &trans
-&mt LEFT_SHIFT HASH  &kp PERCENT       &kp SINGLE_QUOTE   &kp SEMICOLON  &kp EQUAL                 &trans                &trans  &kp PAGE_DOWN  &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW       &kp LS(INTERNATIONAL_1)
-&trans               &trans            &trans             &trans         &mt LEFT_SHIFT LS(SPACE)  &lt 1 LANGUAGE_2      &trans  &trans                                                                &trans
+&trans  &trans  &trans  &trans  &trans                      &trans          &trans        &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans          &trans        &trans          &trans           &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                         &trans
             >;
-
-            sensor-bindings = <&inc_dec_kp LC(KP_MINUS) LC(KP_PLUS)>;
         };
 
         MOUSE {
