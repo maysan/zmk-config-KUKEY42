@@ -60,21 +60,21 @@
 
         default_layer {
             bindings = <
-&mt ESCAPE Q      &kp W         &kp E         &kp R  &kp T                                                  &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LCTRL A       &kp S         &kp D         &kp F  &kp G        &lt 7 INT_HENKAN      &lt 1 INT_MUHENKAN  &kp H        &kp J  &kp K      &kp L    &mt RCTRL ENTER
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V  &kp B        &lt 5 TAB             &lt 6 ESC           &kp N        &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &none  &lt 1 SPACE  &lt 2 LCTRL           &lt 3 BACKSPACE     &lt 4 ENTER                             &kp ESCAPE
+&mt ESCAPE Q      &kp W         &kp E         &kp R          &kp T                                                  &kp Y        &kp U  &kp I      &kp O      &kp P
+&mt LCTRL A       &kp S         &kp D         &kp F          &kp G        &lt 7 INT_HENKAN      &lt 1 INT_MUHENKAN  &kp H        &kp J  &kp K      &kp L      &mt RCTRL ENTER
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V          &kp B        &lt 5 TAB             &lt 6 ESC           &kp N        &kp M  &mkp LCLK  &mkp RCLK  &mt RIGHT_SHIFT SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &kp LG(LS(S))  &lt 1 SPACE  &lt 2 LCTRL           &lt 3 BACKSPACE     &lt 4 ENTER                               &kp ESCAPE
             >;
 
             sensor-bindings = <&WheelScroll SCRL_DOWN SCRL_UP>;
         };
 
-        FUNCTION {
+        SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                      &trans  &kp F7  &kp F8  &kp F9  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &kp F11
-&trans  &trans  &trans  &trans  &trans  &mo 6       &trans  &trans  &kp F1  &kp F2  &kp F3  &kp F10
-&trans  &trans  &trans  &trans  &trans  &mo 1       &trans  &trans                          &kp ESCAPE
+&kp EXCLAMATION  &kp AT_SIGN       &kp HASH           &kp DOLLAR            &kp PERCENT                                &kp CARET      &kp AMPERSAND      &kp ASTERISK  &kp UNDERSCORE  &kp PLUS
+&kp BACKSLASH    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans      &trans  &kp SQT        &kp DOUBLE_QUOTES  &kp GRAVE     &kp MINUS       &kp EQUAL
+&kp PIPE         &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp LESS_THAN         &kp GREATER_THAN       &trans      &trans  &kp SEMICOLON  &kp COLON          &kp COMMA     &kp PERIOD      &kp SLASH
+&trans           &trans            &trans             &trans                &trans                 &trans      &trans  &trans                                                          &kp QUESTION
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
